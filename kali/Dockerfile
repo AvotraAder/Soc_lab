@@ -2,6 +2,7 @@ FROM kalilinux/kali-rolling
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install nmap -y 
 RUN apt-get install sqlmap -y
+RUN apt-get install iputils-ping -y
 RUN apt-get install sudo -y
 RUN apt-get install net-tools -y
 RUN useradd -m -s /bin/bash -p '$6$cyD6xRoLvRrbebUn$Hxn.9IX4QzXiuek2ONikMbtYnurr8ClX4cfVWrsGem97dbedOH33G6wmQSH1cpXKQNYqbJZBP8iJmA19f6d/70' attacker
