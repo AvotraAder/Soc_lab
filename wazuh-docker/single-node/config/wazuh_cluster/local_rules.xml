@@ -1,0 +1,13 @@
+<group name="local,attack,recon,">
+
+  <rule id="100100" level="10" frequency="20" timeframe="120" ignore="120">
+    <if_matched_sid>31101</if_matched_sid>
+    <same_source_ip />
+    <description>Possible scan/enumeration detected: multiple 400/404 errors from same source IP ($(srcip)) in short time.</description>
+    <mitre>
+      <id>T1595</id>
+    </mitre>
+    <group>recon,attack,</group>
+  </rule>
+
+</group>
